@@ -155,7 +155,7 @@
             return resp;
         }
         genJ(min, max) {
-            return ~~(Math.random() * (min, max) + min)
+            return ~~(max * Math.random() + min);
         }
         parseArray(a, resp = "") {
             for (var i = 0; i < a.length; i++) {
